@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+.title {
+  background: rgb(255, 7, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 7, 75, 1) 0%,
+    rgba(125, 51, 78, 1) 100%
+  );
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  padding: 5vmin;
+  text-align: center;
+}
+.innercontainer {
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(200px, auto);
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .innercontainer {
+    width: 100%;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(1fr, auto));
+  }
+}
+.innercontainer div {
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+}
+.innercontainer button {
+  border: 0;
+  background-color: rgb(247, 39, 108);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.innercontainer button:hover {
+  background-color: rgb(170, 15, 66);
+  color: white;
+  transition: 0.1s linear;
+}
+.stringbox {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(63, 63, 63, 1) 100%
+  );
+  color: white;
+}
+.stringtitle {
+  font-size: 5vmin;
+  padding: 3%;
+  text-align: center;
+}
+.stringbody {
+  padding: 3%;
+}
+.stringbody input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.5px solid white;
+  width: 70px;
+  color: white;
+}
+#string {
+  width: fit-content;
+}
+.stringbody div {
+  margin: 1rem 0 1rem 0;
+  line-height: 30px;
+}
+.arithmeticbox {
+  background: rgb(222, 222, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 222, 222, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+}
+.arithmetictitle {
+  font-size: 5vmin;
+  padding: 3%;
+  text-align: center;
+}
+.arithmeticbody {
+  padding: 3%;
+}
+.arithmeticbody input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.5px solid black;
+  width: 70px;
+}
+.arithmeticbody div {
+  margin: 1rem 0 1rem 0;
+  line-height: 30px;
+}
